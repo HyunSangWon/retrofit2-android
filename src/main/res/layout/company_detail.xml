@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CompanyDetailActivity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textInfo"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:hint="업체정보를 확인해주세요"
+        android:layout_marginTop="151dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/detailName"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:hint="현상원업체"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/textInfo"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/detailAddr"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:hint="대전광역시 유성구 문화원로"
+        android:layout_below="@+id/detailName" />
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/detailCnt"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:hint="총 수량 10개"
+        android:layout_below="@+id/detailAddr" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/detailCnt"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/cameraBtn"
+        android:background="#808080"
+        android:text="이전"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/backBtn"
+        android:layout_alignEnd="@+id/detailCnt"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-14dp"
+        android:background="#0083ff"
+        android:text="사진 촬영"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

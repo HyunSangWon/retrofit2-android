@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants"><!--item event 처리시 꼭필요한 설정값-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="75"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="업체이름"
+            android:textColor="#212529"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="위치" />
+
+        <TextView
+            android:id="@+id/textCnt"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="수량" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/listBtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="선택"
+        android:layout_weight="20"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

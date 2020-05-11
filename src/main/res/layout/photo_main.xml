@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.PhotoActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        ></ImageView>
+
+    <FrameLayout
+        android:id="@+id/cameraObjPreview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/obj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cameraObjPreview"
+        android:layout_marginTop="40dp"
+        android:text="담보물 외관을 찍어주세요!"
+        android:textSize="20sp"
+        android:textColor="#F40222"
+        android:gravity="center"
+        ></TextView>
+
+    <Button
+        android:id="@+id/objPhoto"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/obj"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="29dp"
+        android:background="#0083ff"
+        android:text="사진 촬영"
+        android:textSize="25sp"
+        android:textStyle="bold"></Button>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"></SurfaceView>
+
+    <TextView
+        android:id="@+id/qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cameraPreview"
+        android:layout_marginTop="40dp"
+        android:text="QR코드 초점에 맞춰주세요"
+        android:textSize="20sp"
+        android:gravity="center"
+        ></TextView>
+
+
+
+
+</RelativeLayout>
